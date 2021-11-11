@@ -71,6 +71,8 @@
   .main_footer {
     height: 150px;
     background-color: $dc_lightblue_color;
+    z-index: 1;
+    position: relative;
     .row {
       height: 150px;
       .icon {

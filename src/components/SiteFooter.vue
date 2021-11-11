@@ -56,6 +56,9 @@
             </div>
           </div>
         </div>
+        <div class="logo_bg">
+          <img src="../assets/img/dc-logo-bg.png" alt="" />
+        </div>
       </div>
     </div>
     <div class="site_end">
@@ -94,6 +97,14 @@ export default {
           }
         }
       }
+    }
+    .container {
+      position: relative;
+    }
+    .logo_bg {
+      position: absolute;
+      right: 0;
+      top: -100px;
     }
   }
 }
