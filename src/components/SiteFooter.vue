@@ -62,7 +62,19 @@
       </div>
     </div>
     <div class="site_end">
-      <div class="container"></div>
+      <div class="container">
+        <div class="sign_up">
+          <button><a href="">SIGN-UP NOW!</a></button>
+        </div>
+        <div class="social_media">
+          <h6>FOLLOW US</h6>
+          <img src="../assets/img/footer-facebook.png" alt="" />
+          <img src="../assets/img/footer-twitter.png" alt="" />
+          <img src="../assets/img/footer-youtube.png" alt="" />
+          <img src="../assets/img/footer-pinterest.png" alt="" />
+          <img src="../assets/img/footer-periscope.png" alt="" />
+        </div>
+      </div>
     </div>
   </div>
   <!-- /#site_footer -->
@@ -75,6 +87,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/scss/variables.scss";
+
 #site_footer {
   .links {
     height: 375px;
@@ -105,6 +119,40 @@ export default {
       position: absolute;
       right: 0;
       top: -100px;
+    }
+  }
+  .site_end {
+    background-color: #303030;
+    height: 110px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        background: transparent;
+        border-radius: 0px;
+        border: 2px solid $dc_lightblue_color;
+        padding: 12px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .social_media {
+        width: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h6 {
+          font-size: 16px;
+          color: $dc_lightblue_color;
+        }
+      }
     }
   }
 }
