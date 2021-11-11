@@ -58,7 +58,6 @@
 <style lang="scss">
 @import "../assets/scss/variables.scss";
 #site_main {
-  height: 130px;
   background-color: #1c1c1c;
   .container {
     .row {
