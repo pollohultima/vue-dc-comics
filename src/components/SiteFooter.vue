@@ -93,6 +93,8 @@ export default {
   .links {
     height: 375px;
     background-image: url("../assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     .sub_cont {
       padding: 30px 0;
       width: 400px;
