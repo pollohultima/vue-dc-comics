@@ -17,6 +17,7 @@
 
 .col5 {
   width: calc(100% / 5);
-  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
