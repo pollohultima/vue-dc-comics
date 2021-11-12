@@ -8,7 +8,7 @@
 
         <nav class="menu">
           <a href="">CHARACTERS</a>
-          <a href="">COMICS<span class="active"></span></a>
+          <a href="" class="text_active">COMICS<span class="active"></span></a>
           <a href="">MOVIES</a>
           <a href="">TV</a>
           <a href="">GAMES</a>
@@ -40,6 +40,9 @@
     }
 
     .menu {
+      .text_active {
+        color: $dc_lightblue_color;
+      }
       a {
         margin: 1rem;
         text-decoration: none;
