@@ -23,7 +23,7 @@
         <div class="col5">
           <div class="icon">
             <img src="../assets/img/buy-comics-shop-locator.png" alt="" />
-            <p>DIGITAL COMICS</p>
+            <p>COMIC SHOP LOCATOR</p>
           </div>
         </div>
         <div class="col5">
