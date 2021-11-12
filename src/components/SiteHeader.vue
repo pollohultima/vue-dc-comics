@@ -2,9 +2,8 @@
   <header id="site_header">
     <div class="container">
       <div class="row head_cont">
-        <div class="logo">
-          <img src="../assets/img/dc-logo.png" alt="" />
-        </div>
+        <img src="../assets/img/dc-logo.png" alt="" />
+
         <!-- /.logo -->
 
         <nav class="menu">

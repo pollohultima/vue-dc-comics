@@ -3,13 +3,19 @@
     <Jumbo />
     <div class="main_content">
       <section class="container">
-        <div class="row_top">
+        <button class="current_series">
+          <a href="">CURRENT SERIES</a>
+        </button>
+        <div class="cards">
           <ComicsList
             v-for="comic in comics"
             :key="comic.series"
             :thumb="comic.thumb"
             :comicSeries="comic.series"
           />
+        </div>
+        <div class="load">
+          <button><a href="">LOAD MORE</a></button>
         </div>
       </section>
     </div>
@@ -123,12 +129,53 @@ export default {
 @import "../assets/scss/variables.scss";
 #site_main {
   background-color: #1c1c1c;
+
   .container {
-    .row_top {
+    position: relative;
+    .current_series {
+      width: 250px;
+      border: none;
+      background: $dc_lightblue_color;
+      line-height: 52px;
+      vertical-align: middle;
+      position: absolute;
+      top: -31.5px;
+      left: 0;
+      a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 21px;
+      }
+    }
+    .cards {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: space-between;
       h2 {
         color: white;
+      }
+    }
+    .load {
+      display: flex;
+      justify-content: center;
+      button {
+        margin-top: 50px;
+        width: 185px;
+        border: none;
+        background: $dc_lightblue_color;
+        line-height: 36px;
+        vertical-align: middle;
+        margin-bottom: 20px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          text-align: center;
+          font-weight: bold;
+        }
       }
     }
   }
