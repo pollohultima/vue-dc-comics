@@ -4,7 +4,12 @@
     <div class="main_content">
       <section class="container">
         <div class="row_top">
-          <h2>--> Content Goes Here</h2>
+          <ComicsList
+            v-for="comic in comics"
+            :key="comic.series"
+            :thumb="comic.thumb"
+            :comicSeries="comic.series"
+          />
         </div>
       </section>
     </div>
@@ -16,9 +21,10 @@
 <script>
 import Banner from "./Banner.vue";
 import Jumbo from "./Jumbo.vue";
+import ComicsList from "./ComicsList.vue";
 
 export default {
-  components: { Banner, Jumbo },
+  components: { Banner, Jumbo, ComicsList },
 
   data() {
     return {
@@ -121,7 +127,6 @@ export default {
     .row_top {
       display: flex;
       align-items: center;
-      height: 130px;
       h2 {
         color: white;
       }
