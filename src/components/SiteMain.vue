@@ -1,7 +1,7 @@
 <template>
   <div id="site_main">
+    <Jumbo />
     <div class="main_content">
-      <Jumbo />
       <section class="container">
         <div class="row_top">
           <h2>--> Content Goes Here</h2>

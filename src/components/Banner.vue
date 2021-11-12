@@ -49,7 +49,6 @@
 .main_footer {
   height: 150px;
   background-color: $dc_lightblue_color;
-  z-index: 1;
   position: relative;
   .container {
     height: 150px;

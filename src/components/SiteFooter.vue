@@ -130,7 +130,6 @@ export default {
     display: flex;
     align-items: center;
 
-    z-index: 1;
     .container {
       display: flex;
       align-items: center;
